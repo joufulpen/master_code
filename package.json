@@ -1,0 +1,19 @@
+{
+    "name": "cool-master",
+    "version": "1.0.0",
+    "description": "master of cool",
+    "main": "cool-master.js",
+    "scripts": {
+        "build": "npx babel src -d dist & copy /Y resources\\*.* dist",
+        "watch": "copy /Y resources\\*.* dist & npx babel --watch src --out-dir dist --skip-initial-build"
+    },
+    "author": "ljl",
+    "license": "ISC",
+    "devDependencies": {
+        "@babel/cli": "^7.5.0",
+        "@babel/core": "^7.5.4",
+        "@babel/preset-env": "^7.5.4",
+        "babel-preset-minify": "^0.5.0"
+    },
+    "dependencies": {}
+}

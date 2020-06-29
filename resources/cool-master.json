@@ -1,0 +1,10 @@
+{
+  "locals": ["test1.json","test2.json","test3.json","test4.json","test5.json"],
+  "locals说明": "仅限于加载本地（也就是与html同路径下）文件，不需要后缀，将在window上增加coolLocals对象，调用方式如window.coolLocals['test.json']，暂只支持纯文本",
+  "styles": ["../libs/element-ui/theme-chalk/index.css", "../custom/element-ui/custom.css"],
+  "singleScripts": ["../libs/axios.min.js"],
+  "scripts": ["../libs/vue.js"],
+  "preloads": ["../libs/element-ui/theme-chalk/fonts/element-icons.woff"],
+  "备用": ["https://unpkg.com/element-ui/lib/index.js", "libs/element-ui/index.js"],
+  "说明": "名称里含//直接使用，否则加上和cool-master一样的路径。scripts会按顺序加载，singleScripts则不会"
+}
